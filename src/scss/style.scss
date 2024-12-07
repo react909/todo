@@ -1,0 +1,80 @@
+.todo {
+  width: 350px;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 100px auto;
+  // background-color: rgb(17, 0, 255);
+  background: url("https://i.gifer.com/origin/13/13d029bd4323756ef2d24235fffe819d_w200.gif");
+  background-size: cover;
+
+  &__li {
+    &_true {
+      cursor: pointer;
+    }
+    &_false {
+      cursor: pointer;
+    }
+    &_delete {
+      cursor: pointer;
+    }
+  }
+
+  &__list_ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: -50px;
+  }
+  &__list_li {
+    width: 250px;
+    background-color: rgb(235, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 22px;
+    width: 230px;
+    padding: 3px;
+    font-size: 17px;
+  }
+  &_text {
+    margin-right: 50px;
+  }
+  &__add {
+    &_par {
+      text-align: center;
+      color: aliceblue;
+    }
+  }
+  &_btn {
+    color: rebeccapurple;
+  }
+  
+}
+
+.active {
+  background-color: rgb(17, 0, 255);
+}
+
+.notActive {
+  text-decoration: line-through;
+}
+// .input{
+//     background: transparent;
+// }
+.full{
+   color: aliceblue;
+   margin-left: 20px;
+   justify-content: space-between;
+   
+}
+.empty{
+    color: aliceblue;
+    justify-content: space-between;
+}
